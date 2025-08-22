@@ -1,6 +1,6 @@
 
 import './App.css'
-import RootLayout from './components/layout/RootLayout';
+import RootLayout from './Components/layout/RootLayout';
 import { Routes, Route } from 'react-router-dom';
 
 import Portfolio from './Components/pages/Portfolio';
@@ -14,7 +14,7 @@ function App() {
   return (
    <>
    <Routes>
-    <Route path="/" element={<RootLayout />}>
+   
     <Route index element={<Home/>} />
     <Route path="/portfolio" element={<Portfolio/>}/>
     <Route path="/resume" element={<Resume/>}/>
@@ -22,7 +22,7 @@ function App() {
       <Route path="/blog" element={<Blog/>}/>
 
 
-    </Route>
+   
    </Routes>
    
    </>
